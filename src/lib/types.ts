@@ -11,7 +11,7 @@ export type LoadingSpinnerProps = {
   repeat?: number | string;
 } & IconProps;
 
-type VariantProps = SetRequired<
+export type VariantProps = SetRequired<
   Pick<
     LoadingSpinnerProps,
     "duration" | "variant" | "color" | "colors" | "colorScheme" | "repeat"
@@ -19,7 +19,7 @@ type VariantProps = SetRequired<
   "variant" | "repeat"
 >;
 
-type SpinnerVariant = {
+export type SpinnerVariant = {
   frames?: Keyframes;
   getIconStyles?: (
     props: VariantProps,

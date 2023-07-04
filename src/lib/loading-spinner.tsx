@@ -1,10 +1,10 @@
 import { Icon, useTheme } from "@chakra-ui/react";
 
 import { ArenaLogo } from "./arena-logo";
-import { VariantProps, LoadingSpinnerProps } from "./types.d";
+import { VariantProps, LoadingSpinnerProps } from "./types";
 import { variants } from "./spinner-variants";
 
-export { LoadingSpinnerProps };
+export type { LoadingSpinnerProps };
 
 export function LoadingSpinner({
   variant = "fadeInOut",
